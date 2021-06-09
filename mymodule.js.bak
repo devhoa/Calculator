@@ -3,8 +3,7 @@ const calc = (a,b,p) => {
 		return "Please provide all parameters" ;
 	switch (p) {
 		case '+' : {
-			return Number(a) + Number(b);
-			//or return parseInt(a) + parseInt(b);
+			return Number(a)+Number(b);
 			break ;
 		}
 		case '-' : {
