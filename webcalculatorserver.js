@@ -5,7 +5,7 @@ const http = require('http');
 //load module (software library) url
 const url = require('url')
 //const hostname = 'localhost';
-const port = process.env.PORT; 3000
+const port = process.env.PORT;
 const server = http.createServer((req,res) => {
 				res.statusCode = 200;
 				res.setHeader('Content-Type','text/html');
