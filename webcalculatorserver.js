@@ -33,7 +33,7 @@ const server = http.createServer((req,res) => {
 						 <body>
 							<h1>Welcome to a simple calculator</h1>
 							<h2>Please input value a, value b and operator p</h2>
-							<form action=${port}' method='get'>
+							<form action='${port}' method='get'>
 								<p>
 									<label>a</label><input name=a value=${qparams.a}>
 								</p>
