@@ -5,7 +5,7 @@ const http = require('http');
 //load module (software library) url
 const url = require('url');
 //const hostname = 'localhost';
-const port = process.env.PORT|| 3000;
+const port = process.env.PORT || 3000;
 const server = http.createServer((req,res) => {
 				res.statusCode = 200;
 				res.setHeader('Content-Type','text/html');
@@ -33,7 +33,7 @@ const server = http.createServer((req,res) => {
 						 <body>
 							<h1>Welcome to a simple calculator</h1>
 							<h2>Please input value a, value b and operator p</h2>
-							<form action='http://localhost:3000' method='get'>
+							<form action=${port}' method='get'>
 								<p>
 									<label>a</label><input name=a value=${qparams.a}>
 								</p>
