@@ -1,21 +1,13 @@
 {
-  "name": "GCS0805B",
+  "name": "GitHub",
   "version": "1.0.0",
   "description": "",
-  "main": "mymodule.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node use.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/namlam8/GCS0805B.git"
+    "start" : "node webcalculatorserver.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/namlam8/GCS0805B/issues"
-  },
-  "homepage": "https://github.com/namlam8/GCS0805B#readme"
+  "license": "ISC"
 }
