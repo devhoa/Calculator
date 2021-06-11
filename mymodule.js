@@ -8,15 +8,15 @@ const calc = (a,b,p) => {
 			break ;
 		}
 		case '-' : {
-			return a-b;
+			return Number(a) - Number(b);
 			break ;
 		}
 		case '*' : {
-			return a*b;
+			return Number(a) * Number(b);
 			break ;
 		}
 		case '/' : {
-			return a/b;
+			return Number(a) / Number(b);
 			break ;
 		}
 		default :{ return ;}
