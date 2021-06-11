@@ -4,8 +4,8 @@ const http = require('http');
 
 //load module (software library) url
 const url = require('url')
-const hostname = 'localhost';
-const port = 3000;
+//const hostname = 'localhost';
+const port = process.env.PORT; 3000
 const server = http.createServer((req,res) => {
 				res.statusCode = 200;
 				res.setHeader('Content-Type','text/html');
@@ -14,9 +14,9 @@ const server = http.createServer((req,res) => {
 				//1.Read params a,b and p and convert them (a,b) to numbers
 
 				var q = url.parse(req.url,true);
-				console.log('hostname: ' + q.host); //localhost:3000
-				console.log('pathname: ' + q.pathname);// empty
-				console.log('param string: ' + q.search);//?a=20&b=10&p=%2F
+				//console.log('hostname: ' + q.host); //localhost:3000
+				//console.log('pathname: ' + q.pathname);// empty
+				//console.log('param string: ' + q.search);//?a=20&b=10&p=%2F
 
 				var qparams = q.query;
 				console.log(qparams);//{a:'20',b:'10',p:'/'}
@@ -52,6 +52,6 @@ const server = http.createServer((req,res) => {
 						</html>`);
 				//res.end(`The result is ${qparams.a}${qparams.p}${qparams.b} = ` + result);
 				});
-server.listen(port,hostname,() => {
-	console.log(`Server is running at http://${hostname}:${port}/`);
+server.listen(port,() => {
+	console.log(`App is running on ${port}/`);
 });
