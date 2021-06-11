@@ -5,7 +5,7 @@
   "main": "mymodule.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "star": "node use.js"
+    "start": "node use.js"
   },
   "repository": {
     "type": "git",
